@@ -1,0 +1,23 @@
+<h1>Deviseテスト</h1>
+
+<div>
+  <%= link_to 'ユーザー登録', new_staff_registration_path %>
+</div>
+
+<div>
+  <%= link_to 'ログイン', new_staff_session_path %>
+</div>
+
+<div>
+  <%= link_to 'ログアウト', destroy_staff_session_path, method: :delete %>
+</div>
+
+<div>
+  <% if current_staff %>
+    ようこそ
+    <%= current_staff.email %>
+    さん
+<% else %>
+    ユーザー登録をしましょう！
+  <% end %>
+</div>
