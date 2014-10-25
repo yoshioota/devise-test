@@ -8,6 +8,7 @@ class Staff < ActiveRecord::Base
       :rememberable,
       :trackable,
       :validatable,
+      :omniauthable
   )
 
 
